@@ -100,8 +100,7 @@ public class LabelService {
                 if (null != searchMap.get("recommend") && !"".equals(searchMap.get("recommend").toString().trim())) {
                     list.add(criteriaBuilder.equal(root.get("recommend").as(String.class), (String) searchMap.get("recommend")));
                 }
-
-                return criteriaBuilder.and((Predicate[]) list.toArray());
+                return criteriaBuilder.and(list.toArray(new Predicate[list.size()]));
             }
         };
     }

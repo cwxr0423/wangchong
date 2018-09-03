@@ -88,6 +88,13 @@ public class LabelController {
         return new Result(true, StatusCode.OK, "查询成功", labelService.findSearch(searchMap));
     }
 
+    /**
+     * 条件分页查询
+     * @param searchMap
+     * @param page
+     * @param size
+     * @return
+     */
     @RequestMapping(value = "/search/{page}/{size}", method = RequestMethod.POST)
     public Result findSearch(@RequestBody Map searchMap, @PathVariable(value = "page") int page, @PathVariable(value = "size") int size) {
         Page<Label> pageList = labelService.findSearch(searchMap, page, size);
