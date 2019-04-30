@@ -13,8 +13,8 @@
         <module>tensquare_base</module>
     </modules>
          
-         
     <packaging>pom</packaging>
+    <!--      testchange     -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
