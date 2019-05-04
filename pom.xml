@@ -15,6 +15,7 @@
          
     <packaging>pom</packaging>
     <!--      testchange     -->
+	<!-- text2 -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
